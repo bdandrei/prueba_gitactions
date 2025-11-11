@@ -7,11 +7,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Mostrar mensaje de Hola
-      run: 
+      run: |
         echo "Hola desde el runner de github actions"
-    - name: Mostrar fecha actual
-      run:
-       echo "Fecha actual $(date)"
-    - name: Mostrar versión de Java
-      run:
+        echo "Fecha actual $(date)"
+        echo "Versión de Java instalada:"
         java -version
