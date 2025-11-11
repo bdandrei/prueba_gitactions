@@ -1,0 +1,12 @@
+name: Mostrar Hola
+on:
+  push:
+    branches: [ main ]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Mostrar mensaje de Hola
+      run: 
+        echo "Hola desde el runner de github actions"
+
