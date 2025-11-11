@@ -9,4 +9,3 @@ jobs:
     - name: Mostrar mensaje de Hola
       run: 
         echo "Hola desde el runner de github actions"
-

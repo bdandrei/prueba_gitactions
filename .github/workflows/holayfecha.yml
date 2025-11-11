@@ -1,0 +1,17 @@
+name: Mostrar Hola, fecha y versión java
+on:
+  push:
+    branches: [main]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Mostrar mensaje de Hola
+      run: 
+        echo "Hola desde el runner de github actions"
+    - name: Mostrar fecha actual
+      run:
+        echo "Fecha actual: $(date)"
+    - name: Mostrar versión de Java
+      run:
+        java -version
