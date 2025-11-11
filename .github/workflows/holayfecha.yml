@@ -10,5 +10,6 @@ jobs:
       run: |
         echo "Hola desde el runner de github actions"
         echo "Fecha actual $(date)"
+        ls -la
         echo "Versión de Java instalada:"
         java -version
